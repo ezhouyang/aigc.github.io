@@ -4,6 +4,11 @@
 		<loc>http://slowlife.mobi/</loc>
 	</url>
 	<url>
+		<loc>http://slowlife.mobi/Blog/raspbian%E4%B8%8A%E6%9B%B4%E6%96%B0apt-get%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
+		<lastmod>2013-10-30</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
 		<loc>http://slowlife.mobi/Blog/%E5%A5%BD%E7%8E%A9%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%AC%E5%8F%B8-kaggle/</loc>
 		<lastmod>2013-10-29</lastmod>
 		<changefreq>weekly</changefreq>

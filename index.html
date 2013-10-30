@@ -96,6 +96,35 @@
 
 
 <div class="post">
+  <h3 class="title"><a href="/Blog/raspbian%E4%B8%8A%E6%9B%B4%E6%96%B0apt-get%E9%95%9C%E5%83%8F%E6%BA%90/">raspbian上更新apt-get镜像源</a> <span class="date">2013-10-30</span></h3>
+
+  <h5>问题：</h5>
+
+<p>今天在raspberry pi上安装nginx，发现镜像源根本不能解析。然后更新发现也不行，发现系统默认的源已经不能解析，不是报404错误，估计有可能是被墙了。几经search终于发现一些镜像的源，具体在：<a href="http://www.raspbian.org/RaspbianMirrors">RaspbianMirrors</a>。</p>
+
+<h5>寻找源：</h5>
+
+<p>我选用的是：<a href="http://mirror.sysu.edu.cn/raspbian/">sysu</a> ,好像是中山大学的源。</p>
+
+<h5>更新源：</h5>
+
+<pre><code>sudo vi /etc/apt/sources.list
+
+</code></pre>
+
+<p>修改地址为：</p>
+
+<pre><code>deb http://mirror.sysu.edu.cn/raspbian/raspbian wheezy main contrib non-free
+
+</code></pre>
+
+
+  <div class="more">
+    <a href="/Blog/raspbian%E4%B8%8A%E6%9B%B4%E6%96%B0apt-get%E9%95%9C%E5%83%8F%E6%BA%90/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
   <h3 class="title"><a href="/Blog/%E5%A5%BD%E7%8E%A9%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%AC%E5%8F%B8-kaggle/">好玩的数据公司-kaggle</a> <span class="date">2013-10-29</span></h3>
 
   <h3>为什么说数据是未来?</h3>

@@ -3,7 +3,44 @@
   <channel>
     <title>eZhouyang</title>
     <link>http://slowlife.mobi</link>
-    <pubDate>2013-10-29 05:33:33 +0800</pubDate>
+    <pubDate>2013-10-30 01:36:46 +0800</pubDate>
+    <item>
+      <title>raspbian上更新apt-get镜像源</title>
+      <link>http://slowlife.mobi/Blog/raspbian%E4%B8%8A%E6%9B%B4%E6%96%B0apt-get%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+      <pubDate>2013-10-30 12:00:00 +0800</pubDate>
+      <description>&lt;h5&gt;问题：&lt;/h5&gt;
+
+&lt;p&gt;今天在raspberry pi上安装nginx，发现镜像源根本不能解析。然后更新发现也不行，发现系统默认的源已经不能解析，不是报404错误，估计有可能是被墙了。几经search终于发现一些镜像的源，具体在：&lt;a href=&#34;http://www.raspbian.org/RaspbianMirrors&#34;&gt;RaspbianMirrors&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h5&gt;寻找源：&lt;/h5&gt;
+
+&lt;p&gt;我选用的是：&lt;a href=&#34;http://mirror.sysu.edu.cn/raspbian/&#34;&gt;sysu&lt;/a&gt; ,好像是中山大学的源。&lt;/p&gt;
+
+&lt;h5&gt;更新源：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo vi /etc/apt/sources.list
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;修改地址为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;deb http://mirror.sysu.edu.cn/raspbian/raspbian wheezy main contrib non-free
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更新源信息：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get update
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下载nginx:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install nginx
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     <item>
       <title>好玩的数据公司-kaggle</title>
       <link>http://slowlife.mobi/Blog/%E5%A5%BD%E7%8E%A9%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%AC%E5%8F%B8-kaggle/</link>
